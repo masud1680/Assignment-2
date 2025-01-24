@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoping</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    
+    <div class="search_box">
+        <input type="text" id="search_field" placeholder="Search Products" class="form-control mb-3 input_box "/>
+        <button onclick="handleSearch()" class="btn btn-primary mb-3 button_box ">Search</button>
+    </div>
+    
+    <div class="main_container">
+        <div id="product_container" class="product_container">
+
+        </div>
+
+        <div class="cart_container">
+            <h4>Total Cart : <span id="count">0</span></h4>
+            <hr>
+            <div class="cart-title">
+              <h4>SL.</h4>
+              <h4>Nm.</h4>
+              <h4>Img </h4>
+              <h4>Pr.</h4>
+            </div>
+            
+
+            <div id="card_main_cintainer", class="card_main_cintainer"></div>
+            <hr>
+
+            <h3>Total Price: <span id="add_total"></span> </h3>
+        </div>
+    </div>
+
+    <div id="limit-alert-box" class="alert-box">
+      <div class="limit-alert-content">
+      <h5>You cannot add more than 7 products to the cart!!</h5>
+      <button id="alert-button">Close</button>
+      </div>
+
+    </div>
+    <div id="ditels-alert-box" class="alert-box">
+       
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
